@@ -1,0 +1,17 @@
+To make basic graphs structure
+
+1) Create class -
+	class Vertex {}
+
+2) Declare variables like -
+	private int value;				// Add values
+	private boolean isVisited;			// Check if current object is visited or not
+	private List<Vertex> adjList;			// Adjoint element for current vertex
+
+3) Initialize these variables in constructor
+	public Vertex(int value){
+		this.value = value;
+		this.adjList = new ArrayList<>();		// Initiate it with ArrayList
+	}
+
+4) Generate required getters and setters.
