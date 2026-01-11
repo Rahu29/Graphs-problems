@@ -1,0 +1,6 @@
+1) Create queue
+2) Add vertex to it and set vertex to visited
+3) Run while loop till queue is empty
+4) poll head of queue and store it in variable called "current"
+5) Print "current" variable
+6) Get all adjecent elements and store them in queue one by one only if the element is not visited.
