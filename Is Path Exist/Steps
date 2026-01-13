@@ -1,0 +1,19 @@
+1) First create a Vertex class for creating a basic structure of Maze using int[][].
+2) create a method isFeasibleMove() which will take two parameter row and col and return boolean result.
+3) write four conditions in this method -
+    1) Values of row and column are not less than 0.
+    2) Values of row and col are not greater than int[][] array.
+    3) The current position is not visited previously.
+    4) The current position must not a wall or any obstacle
+    5) If every thing is okay return true at last;
+4) Create top method called isWayExist() which will take two parameter row and col and return boolean result.
+5) Check 'if' row and col both are the last position i.e. int[][].length - 1, means the last element, if so, then return true.
+6) Check 'if' condition for current position isFeasibleMove or not, if it is true then,
+    1) Set current position true.
+    2) Recursively call same function(isWayExist()) in 'if' condition and increase value of row to go DOWN and return true.
+    3) Recursively call same function(isWayExist()) in 'if' condition and decrease value of row to go UP and return true.
+    4) Recursively call same function(isWayExist()) in 'if' condition and decrease value of col to LEFT and return true.
+    5) Recursively call same function(isWayExist()) in 'if' condition and increase value of col to RIGHT and return true.
+    6) At last set current position to be false (If in case there is no way then we need to backtrack thats why we are setting this to false).
+7) If all if conditions are failed mentioned in step 6 the return false in that case.
+8) END
