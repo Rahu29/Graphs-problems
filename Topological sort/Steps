@@ -1,0 +1,12 @@
+1) First create a Vertex class for creating a basic structure of Vertex with fields (Value, isVisited, List of adjElements).
+2) Create getter setters.
+3) Make a new class called TopoSort.
+    1) Create a global stack here.
+    2) Create a function called topoSort(Vertex v)
+    3) Set current vertex as visited
+    4) Run a loop to all adjecent elments of current vertex
+        1) Check condition if current element is not visited then call same function recursively i.e topoSort(Vertex v)
+4) At last add element in stack i.e v
+5) Write a function for printing stack elements
+6) Test it from the main function
+7) END
